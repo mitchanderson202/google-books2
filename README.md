@@ -3,6 +3,7 @@
 WORK IN PROGRESS
 
 ## Demo & Snippets
+
 <img width="934" alt="GB-Home-Page-Image" src="https://github.com/mitchanderson202/google-books2/assets/78459081/400a4ac1-b864-4565-9180-ad50369eb776">
 <img width="934" alt="GB-Modal-Pop-Up-Image" src="https://github.com/mitchanderson202/google-books2/assets/78459081/c96f1769-17ad-4e43-8683-e17d17a8db84">
 <img width="937" alt="GB-Search-History-Image" src="https://github.com/mitchanderson202/google-books2/assets/78459081/5acae8fe-0794-4161-af17-285f5ddc4a21">
@@ -14,7 +15,7 @@ WORK IN PROGRESS
 
 - Re-do the original Google Books. - https://github.com/mitchanderson202/Google-Books
 - Using Google API.
-- Form containing search.
+- Form containing search input and button.
 - Book information.
 - Design is the very similar.
 - Improvements include : - Global State. - Search History. - Modal Pop Up on each book. - Sorting functions for book order.
