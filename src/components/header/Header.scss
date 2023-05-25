@@ -1,0 +1,28 @@
+.Header {
+  width: 100vw;
+  text-align: center;
+
+  h1 {
+    min-height: 8vh;
+    background-color: #dda15e;
+    font-size: 3em;
+  }
+
+  .Header-Information {
+    min-height: 10vh;
+    background-color: #5e9add;
+    padding: 1% 2%;
+    font-size: 1.2em;
+
+    span {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+}
