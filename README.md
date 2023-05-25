@@ -1,9 +1,12 @@
 # Google Books v2
 
-## Demo & Snippets
+WORK IN PROGRESS
 
-- Include hosted link
-- Include images of app if CLI or Client App
+## Demo & Snippets
+<img width="934" alt="GB-Home-Page-Image" src="https://github.com/mitchanderson202/google-books2/assets/78459081/400a4ac1-b864-4565-9180-ad50369eb776">
+<img width="934" alt="GB-Modal-Pop-Up-Image" src="https://github.com/mitchanderson202/google-books2/assets/78459081/c96f1769-17ad-4e43-8683-e17d17a8db84">
+<img width="937" alt="GB-Search-History-Image" src="https://github.com/mitchanderson202/google-books2/assets/78459081/5acae8fe-0794-4161-af17-285f5ddc4a21">
+<img width="932" alt="GB-Sorting-Functions-Image" src="https://github.com/mitchanderson202/google-books2/assets/78459081/157ff3c4-a2c5-4e34-a59b-4d279ce0d885">
 
 ---
 
