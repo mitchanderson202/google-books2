@@ -1,5 +1,7 @@
 # Google Books v2
 
+[![Cypress Tests](https://github.com/mitchanderson202/google-books2/actions/workflows/main.yml/badge.svg)](https://github.com/mitchanderson202/google-books2/actions/workflows/main.yml)
+
 WORK IN PROGRESS
 
 ## Demo & Snippets
