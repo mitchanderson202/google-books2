@@ -8,3 +8,19 @@
   min-height: 100vh;
   background-color: #dda15e;
 }
+
+.Search-Filter-Grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .Search-Filter-Grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    // justify-items: start;
+    padding-left: 25px;
+  }
+}

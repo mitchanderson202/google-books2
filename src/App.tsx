@@ -49,8 +49,10 @@ function App() {
     <div className="App">
       <Header />
       <SearchContext.Provider value={{ data, setData, handleSearch }}>
-        <Search />
-        <Filter />
+        <div className="Search-Filter-Grid">
+          <Search />
+          <Filter />
+        </div>
       </SearchContext.Provider>
       {showBooks && <Books data={data} />}
     </div>

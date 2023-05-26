@@ -1,8 +1,5 @@
 .Search {
-  text-align: center;
   margin-top: 1%;
-  display: inline-block;
-  width: 50%;
   input {
     font-size: 1.5em;
   }
@@ -11,22 +8,49 @@
   }
 
   .Search-History {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: absolute;
+    z-index: 100;
+    width: 300px;
     padding: 0;
   }
 
   li {
-    width: 392.05px;
-    //fix this ^ up
     background-color: white;
     cursor: pointer;
     font-size: 1.5em;
     text-align: start;
     border: 1px solid black;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .Search {
+    input {
+      font-size: 1.2em;
+    }
+    button {
+      font-size: 1.2em;
+    }
+    .Search-History {
+      width: 100%;
+    }
+    li {
+      width: 249px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Search {
+    input {
+      font-size: 1em;
+    }
+    button {
+      font-size: 1em;
+    }
+
+    li {
+      width: 249px;
+    }
   }
 }

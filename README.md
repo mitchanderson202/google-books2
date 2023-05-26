@@ -50,10 +50,8 @@ WORK IN PROGRESS
 
 ## Known issues
 
-- Not responsive yet.
 - Search history isn't cached in the browser.
 - Search history isn't clickable to re-search or even put the query back into the text box.
-
 - Testing: A few tests will need to be written, something I'm going to re-search into and fix up in the near future.
 
 ---

@@ -1,10 +1,31 @@
 .Filter {
-  display: inline-block;
-  width: 50%;
+  margin-top: 1%;
   label {
     font-size: 1.5em;
   }
   select {
     font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .Filter {
+    label {
+      font-size: 1.2em;
+    }
+    select {
+      font-size: 1.2em;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Filter {
+    label {
+      font-size: 1em;
+    }
+    select {
+      font-size: 1em;
+    }
   }
 }

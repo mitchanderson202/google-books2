@@ -46,6 +46,7 @@ const Search = () => {
         />
 
         <button type="submit">Search</button>
+
         {searchActive && (
           <ul className="Search-History">
             {searchHistoryRef.current.map((search, index) => (
