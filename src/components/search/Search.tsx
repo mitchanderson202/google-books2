@@ -30,7 +30,13 @@ const Search = () => {
   };
 
   const handleSearchBlur = () => {
-    setSearchActive(false);
+    setTimeout(() => {
+      setSearchActive(false);
+    }, 100);
+  };
+
+  const handleLiClick = (search: string) => {
+    setQuery(search);
   };
 
   return (
@@ -50,7 +56,9 @@ const Search = () => {
         {searchActive && (
           <ul className="Search-History">
             {searchHistoryRef.current.map((search, index) => (
-              <li key={index}>{search}</li>
+              <li key={index} onClick={() => handleLiClick(search)}>
+                {search}
+              </li>
             ))}
           </ul>
         )}
