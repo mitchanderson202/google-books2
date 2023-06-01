@@ -1,24 +1,34 @@
 import "./Search.scss";
 
 import { SearchContext } from "../../App";
-import { useState, useContext, FormEvent, ChangeEvent, useRef } from "react";
+import { useState, useContext, FormEvent, ChangeEvent, useEffect } from "react";
 
 const Search = () => {
   const { handleSearch } = useContext(SearchContext);
   const [query, setQuery] = useState("");
   const [searchActive, setSearchActive] = useState(false);
+  const [searchHistory, setSearchHistory] = useState<string[]>([]);
 
-  const searchHistoryRef = useRef<string[]>([]);
+  useEffect(() => {
+    const storedHistory = localStorage.getItem("searchHistory");
+    if (storedHistory) {
+      setSearchHistory(JSON.parse(storedHistory));
+    }
+  }, []);
+
+  const updateSearchHistory = (updatedHistory: string[]) => {
+    setSearchHistory(updatedHistory);
+    localStorage.setItem("searchHistory", JSON.stringify(updatedHistory));
+  };
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    searchHistoryRef.current.unshift(query);
-    if (searchHistoryRef.current.length > 6) {
-      searchHistoryRef.current.pop();
-    }
+    const updatedHistory = [query, ...searchHistory.slice(0, 5)];
+    updateSearchHistory(updatedHistory);
 
     handleSearch(query);
+    setQuery("");
   };
 
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -55,7 +65,7 @@ const Search = () => {
 
         {searchActive && (
           <ul className="Search-History">
-            {searchHistoryRef.current.map((search, index) => (
+            {searchHistory.map((search, index) => (
               <li key={index} onClick={() => handleLiClick(search)}>
                 {search}
               </li>

@@ -42,7 +42,7 @@ WORK IN PROGRESS
 
 ## Features
 
-- Clickable Search History.
+- Clickable Search History, stored in Local Storage.
 - Modal pop up on each book, this contains a link to the google books page for that book.
 - Sorting functions, Author A-Z & Z-A, Title A-Z & Z-A, and Release Data Newest to Oldest & Oldest to Newest.
 
@@ -50,7 +50,6 @@ WORK IN PROGRESS
 
 ## Known issues
 
-- Search history isn't cached in the browser.
 - Testing: A few tests will need to be written, something I'm going to re-search into and fix up in the near future.
 
 ---
